@@ -1,0 +1,15 @@
+# Build artifacts
+/vanity-zts
+/vanity-zts.exe
+*.exe
+*.test
+*.out
+
+# Go
+/vendor/
+
+# Editor/OS cruft
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
