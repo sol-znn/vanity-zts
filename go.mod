@@ -2,7 +2,7 @@ module github.com/zenon-network/vanity-zts
 
 go 1.23
 
-require github.com/zenon-network/go-zenon v0.0.0-00010101000000-000000000000
+require github.com/zenon-network/go-zenon v0.0.8-alphanet.0.20260820091536-590f43ca7a24
 
 require (
 	github.com/btcsuite/btcd/btcec/v2 v2.2.0 // indirect
@@ -32,5 +32,3 @@ require (
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
 	gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce // indirect
 )
-
-replace github.com/zenon-network/go-zenon => ../go-zenon

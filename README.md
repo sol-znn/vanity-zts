@@ -2,7 +2,7 @@
 
 Mine a Zenon token-standard address (`zts1...`) with a chosen
 prefix/suffix/substring, the same way
-[znn-address-generator](../znn-address-generator-go) mines a vanity `z1...`
+[znn-address-generator](https://github.com/sol-znn/znn-address-generator) mines a vanity `z1...`
 account address.
 
 ## How a ZTS is actually chosen
@@ -74,7 +74,7 @@ broadcast the winning block once found:
 | `-password` | keystore password (prompted if omitted) |
 | `-index` | account index to derive (default 0) |
 | `-url` | node RPC endpoint, default `http://127.0.0.1:35997` |
-| _(no flag)_ | the block's network id (`ChainIdentifier`) is read from the connected node's frontier momentum and never needs to be set manually — a mismatch here (e.g. mining against devnet's id 69 while pointed at mainnet's id 1) is what a `different network Id` error from `publishRawTransaction` means |
+| *(no flag)* | the block's network id (`ChainIdentifier`) is read from the connected node's frontier momentum and never needs to be set manually — a mismatch here (e.g. mining against devnet's id 69 while pointed at mainnet's id 1) is what a `different network Id` error from `publishRawTransaction` means |
 | `-workers` | mining goroutines, default: number of CPUs |
 | `-momentum-window` | also vary `MomentumAcknowledged` across this many recent momentums (default 1: just the current frontier) |
 | `-name`, `-symbol`, `-domain`, `-total-supply`, `-max-supply`, `-decimals`, `-mintable`, `-burnable`, `-utility` | `IssueToken` parameters — fixed inputs, not part of the search |
